@@ -1,7 +1,7 @@
 <section id="recruit-section-2" class="recruit-section-1">
     <div class="container">
-        <div class="recruit-section-title fade-right">
-            <h1 class=" h2">
+        <div class="recruit-section-title ">
+            <h1 class=" h2 fade-right">
                 <?php the_field('recruit_section_2_title');?>
             </h1>
             <div class="line my-md-4 my-2"></div>

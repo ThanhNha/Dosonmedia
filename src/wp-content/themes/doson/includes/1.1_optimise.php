@@ -44,7 +44,23 @@ function add_async_attribute($tag, $handle) {
 	return $tag;
 }
 
+function shin_add_column( $columns ){
+	$columns['shin_post_id_clmn'] = 'ID'; // $columns['Column ID'] = 'Column Title';
+	return $columns;
+}
+add_filter('manage_posts_columns', 'shin_add_column', 5);
 
+/**
+ * Fills the column content
+ *
+ * @param string $column ID of the column
+ * @param integer $id Post ID
+ */
+function shin_column_content( $column, $id ){
+	if( $column === 'shin_post_id_clmn')
+		echo $id;
+}
+add_action('manage_posts_custom_column', 'shin_column_content', 5, 2);
 
 //Minify HTML When site release open this
 // function sanitize_output($buffer) {

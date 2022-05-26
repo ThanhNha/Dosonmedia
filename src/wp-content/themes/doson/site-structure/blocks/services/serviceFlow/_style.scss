@@ -140,7 +140,7 @@
   }
   .wrapper-cards-flow.mobile {
     display: block;
-
+    overflow: hidden;
     @include desktop {
       display: none;
     }

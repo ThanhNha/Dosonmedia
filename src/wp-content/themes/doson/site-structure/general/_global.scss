@@ -40,6 +40,7 @@ main {
   }
 }
 .wrapper-title-service {
+  overflow: hidden;
   .section-title {
     display: flex;
     span {
@@ -129,6 +130,7 @@ main {
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
   margin-bottom: 20px;
   @include tablet {
     max-width: 80%;
@@ -356,6 +358,7 @@ main {
     border-radius: 15px;
     overflow: hidden;
     max-height: 250px;
+    min-height: 90px;
     img {
       @include transition;
       width: 100%;
@@ -380,4 +383,7 @@ main {
       @include limit-row(3);
     }
   }
+}
+.fade-right {
+  overflow: hidden;
 }

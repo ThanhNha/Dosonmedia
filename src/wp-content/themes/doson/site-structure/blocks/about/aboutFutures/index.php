@@ -41,7 +41,7 @@
                 <div class="wrapper-value">
                     <div class="row">
                         <?php if( have_rows('about_futures_values') ): ?>
-                        <?php $i = 1;?>
+                        <?php $i = 0;?>
                         <?php while( have_rows('about_futures_values') ) : the_row(); ?>
                         <!-- variables -->
                         <?php 
