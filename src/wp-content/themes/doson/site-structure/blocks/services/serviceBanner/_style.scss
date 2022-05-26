@@ -1,0 +1,86 @@
+#section-bannerService {
+  min-height: 500px;
+  background: $color-gradient-2;
+  overflow: hidden;
+  .wrapper-form {
+    padding: 40px 0;
+    @include tablet {
+      padding: 56px 0;
+    }
+    @include desktop {
+      padding: 80px 0;
+    }
+    .label-form {
+      display: block;
+      text-align: center;
+      color: $color-red-500;
+      font-weight: bold;
+      font-size: 25px;
+      text-transform: uppercase;
+      font-size: 20px;
+      margin-bottom: 20px;
+      @include desktop {
+        font-size: 25px;
+        margin-bottom: 25px;
+      }
+    }
+    .form-service {
+      padding: 50px 25px;
+      background: $white;
+      border-radius: 20px;
+      fieldset {
+        padding: 0 !important;
+      }
+      // .form-field {
+      //   margin: 0 !important;
+      //   padding: 0 !important;
+      // }
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+
+      input {
+        padding: 15px 15px;
+        border-radius: 15px;
+        color: $color-gray-500;
+        border: 1px solid $color-red-400;
+        font-size: 1rem;
+        display: block;
+        width: 100%;
+        background: $white;
+        height: auto;
+        font-family: $font !important;
+        &:focus {
+          box-shadow: none;
+          border: 1px solid $color-red-500;
+        }
+      }
+    }
+  }
+
+  .wrapper-banner {
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    position: relative;
+    @include desktop {
+      min-height: 500px;
+      display: flex;
+      align-items: flex-end;
+      width: 60%;
+      position: absolute;
+    }
+    img {
+      width: 100%;
+      object-fit: contain;
+      @include desktop {
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+  }
+  .btn__form {
+    display: block;
+    width: 100%;
+  }
+}

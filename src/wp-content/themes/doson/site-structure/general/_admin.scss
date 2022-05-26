@@ -1,0 +1,50 @@
+/*
+    Editor
+*/
+body#tinymce {
+    margin: 15px;
+    background-color: #FFFFFF;
+    ul{
+        list-style: initial;
+    }
+    blockquote, figure{
+        border-left: 3px solid #9e9e9e;
+    }
+}
+
+.wp-block {
+    max-width: 1080px;
+    border: 1px solid #e2e2e2;
+}
+ 
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+    max-width: 1070px;
+}
+ 
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+    max-width: none;
+}
+.block-editor__container img,
+.components-responsive-wrapper__content,
+.editor-post-featured-image .components-responsive-wrapper__content{
+    position: relative!important;
+}
+#your-profile label+a, label,
+.edit-post-post-schedule span,
+.edit-post-post-visibility span,
+.edit-post-post-link__link{
+    font-size: 14px!important;
+}
+
+.components-panel__body-toggle.components-button{
+    font-size: 16px!important;
+}
+
+.wp-block-image.img-fluid{
+    img{
+        width: 100%;
+        height: auto;
+    }
+}

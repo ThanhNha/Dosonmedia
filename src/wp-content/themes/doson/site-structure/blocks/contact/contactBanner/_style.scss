@@ -1,0 +1,26 @@
+#contact-main-banner {
+  position: relative;
+  min-height: 300px;
+  @include tablet {
+    min-height: 80vh;
+  }
+  @include desktop {
+    max-height: 650px;
+    min-height: 100vh;
+  }
+  .banner-contact {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

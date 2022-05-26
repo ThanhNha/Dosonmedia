@@ -1,0 +1,54 @@
+@import "mixins";
+@import "keyframes";
+
+@import "fonts";
+@import "variables";
+
+@import "reset";
+@import "icomoon";
+@import "animation";
+@import "buttons";
+@import "custom";
+@import "global";
+@import "global";
+@import "admin";
+@import "type";
+
+@import "../../site-structure/header/style";
+@import "../../site-structure/footer/style";
+
+//Home Page
+@import "../../site-structure/blocks/home/homeBanner/style";
+@import "../../site-structure/blocks/home/homeBlogs/style";
+@import "../../site-structure/blocks/home/homeService/style";
+@import "../../site-structure/blocks/home/homeTestimonial/style";
+@import "../../site-structure/blocks/home/homeValue/style";
+@import "../../site-structure/blocks/home/homeWelcome/style";
+
+//About page
+@import "../../site-structure/blocks/about/aboutBanner/style";
+@import "../../site-structure/blocks/about/aboutVision/style";
+@import "../../site-structure/blocks/about/aboutFutures/style";
+@import "../../site-structure/blocks/about/aboutAnimation/style";
+//Service Page Template
+@import "../../site-structure/blocks/services/serviceBanner/style";
+@import "../../site-structure/blocks/services/serviceMarketing/style";
+@import "../../site-structure/blocks/services/serviceDigital/style";
+@import "../../site-structure/blocks/services/serviceCreative/style";
+@import "../../site-structure/blocks/services/serviceFlow/style";
+//Recruit Page
+@import "../../site-structure/blocks/recruit/recruitBanner/style";
+@import "../../site-structure/blocks/recruit/recruitSection2/style";
+@import "../../site-structure/blocks/recruit/recruitTable/style";
+//Contact Page
+@import "../../site-structure/blocks/contact/contactBanner/style";
+@import "../../site-structure/blocks/contact/contactSection2/style";
+@import "../../site-structure/blocks/contact/contactMap/style";
+
+//News Page
+@import "../../site-structure/page/page-blogs/style";
+
+// @import "../../site-structure/page/404/style";
+// @import "../../site-structure/page/category/style";
+// @import "../../site-structure/page/page/style";
+// @import "../../site-structure/page/post-detail/style";
