@@ -18,6 +18,7 @@ $(document).ready(function () {
   homeTestimonial();
   homeValue();
   serviceFlow();
+  pageNews();
 
   // Slider
   //Header aminations

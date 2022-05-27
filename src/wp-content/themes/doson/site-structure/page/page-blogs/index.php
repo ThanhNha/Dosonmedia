@@ -135,11 +135,12 @@
                             </div>
                         </div>
                     </div>
-                    <section id="section-news animation-wrapper" class="section-news">
+                    <section id="section-news" class="section-news animation-wrapper">
                         <?php
                         $args = array(  
                             'post_status'    => 'publish',
-                            'posts_per_page' => 8, 
+                            'showposts' => 2,
+                            // 'posts_per_page' => 2, 
                             'orderby' => 'rand',
                             'post__not_in' =>$id_news_hot
                         );
@@ -177,25 +178,27 @@
                                         </div>
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
-                        <?php endwhile;
-                                wp_reset_postdata(); ?>
+                        <?php endwhile; ?>
                     </section>
                     <!-- End category 1 -->
                     <!-- Load more button -->
+                    <?php
+                         echo  $loop->max_num_pages;
+                        // don't display the button if there are not enough posts
+                        if (  $loop->max_num_pages > 1 ) :?>
                     <div class="wrapper-load-more">
                         <div id="load-more-news" class="btn btn-outline-red">
-                            <div class="btn-click magnetic" data-strength="25" data-strength-text="15">
+                            <div id="load-more" class="btn-click magnetic" data-strength="25" data-strength-text="15">
                                 <div class="btn-fill"></div>
                                 <span class="btn-text">
-                                    <a class="btn-text-inner change" href="">Đọc thêm</a>
+                                    <span class="btn-text-inner change">Đọc thêm</span>
                                 </span>
                             </div>
                         </div>
                     </div>
+                    <?php endif; wp_reset_postdata(); ?>
                 </div>
                 <!-- Bar news -->
                 <div class="col-lg-4 col-md-12 col-12 position-relative">
@@ -217,14 +220,6 @@
                         );
                     $results_read = get_posts($query_read);
                     if( $results_read) : ?>
-                        <?php
-                        
-                        //variable
-                            // $result_read_link = get_the_permalink($result_read->ID);
-                            // $result_read_title = get_the_title($result_read->ID);
-                            // $result_read_description =  get_the_excerpt($result_read->ID);
-                            // $result_read_date = get_the_date( 'D M j,Y', $result_read->ID );
-                        ?>
                         <!-- html here -->
                         <div class="wrapper-card-news-hot">
                             <div class="card-news-hot">

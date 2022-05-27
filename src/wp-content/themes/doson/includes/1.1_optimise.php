@@ -62,6 +62,7 @@ function shin_column_content( $column, $id ){
 }
 add_action('manage_posts_custom_column', 'shin_column_content', 5, 2);
 
+
 //Minify HTML When site release open this
 // function sanitize_output($buffer) {
 
