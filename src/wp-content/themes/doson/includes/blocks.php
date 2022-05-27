@@ -251,5 +251,37 @@ function shin_acf_init_block_types()
             'keywords'          => array('core', 'space', 'contactMap'),
             'mode'              => 'edit', 
         ));
+
+        //Page Service Detail
+        acf_register_block_type(array(
+            'name'              => 'Block Service Detail Banner',
+            'title'             => __('ServiceDetailBanner'),
+            'description'       => __('A custom Service Detail Banner block.'),
+            'render_template'   => 'site-structure/blocks/serviceDetail/serviceDTBanner/index.php',
+            'category'          => 'shin-blocks',
+            'icon'              => 'admin-customizer',
+            'keywords'          => array('core', 'space', 'Service Detail Banner'),
+            'mode'              => 'edit', 
+        ));
+        acf_register_block_type(array(
+            'name'              => 'Block Service Detail Section 2',
+            'title'             => __('ServiceDetailSection2'),
+            'description'       => __('A custom Service Detail Section 2 block.'),
+            'render_template'   => 'site-structure/blocks/serviceDetail/serviceDT2/index.php',
+            'category'          => 'shin-blocks',
+            'icon'              => 'admin-customizer',
+            'keywords'          => array('core', 'space', 'Service Detail Section 2'),
+            'mode'              => 'edit', 
+        ));
+        acf_register_block_type(array(
+            'name'              => 'Block Service Detail Section 3',
+            'title'             => __('Service Detail Section 3'),
+            'description'       => __('A custom Service Detail Section 3 block.'),
+            'render_template'   => 'site-structure/blocks/serviceDetail/serviceDT3/index.php',
+            'category'          => 'shin-blocks',
+            'icon'              => 'admin-customizer',
+            'keywords'          => array('core', 'space', 'Service Detail Section 3'),
+            'mode'              => 'edit', 
+        ));
     }
 }

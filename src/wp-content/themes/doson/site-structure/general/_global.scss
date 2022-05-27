@@ -105,8 +105,10 @@ main {
       padding: 10px 15px;
       border-radius: 20px;
       background: $color-red-300;
-
-      margin-left: 20px;
+      @include tablet {
+        margin-left: 20px;
+        margin-top: 0;
+      }
     }
     .title {
       display: flex;

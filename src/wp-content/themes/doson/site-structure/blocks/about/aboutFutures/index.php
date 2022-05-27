@@ -9,7 +9,7 @@
        ?>
     </div>
     <div class="container">
-        <div class="row">
+        <div class="row reverse">
             <div class="col-lg-6 col-12 position-relative">
                 <div class="wrapper-card-futures">
                     <div class="card-futures">
@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div class="wrapper-value">
-                    <div class="row">
+                    <div class="row ">
                         <?php if( have_rows('about_futures_values') ): ?>
                         <?php $i = 0;?>
                         <?php while( have_rows('about_futures_values') ) : the_row(); ?>

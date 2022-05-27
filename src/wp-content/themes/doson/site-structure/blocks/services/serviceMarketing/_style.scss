@@ -63,6 +63,9 @@
       }
       .wrapper-btn {
         margin-top: 20px;
+        .btn {
+          padding: 0;
+        }
         .main-btn {
           background: $color-red-500;
         }

@@ -2,14 +2,7 @@
     <div class="container">
         <div class="wrapper-aboutAnimation">
             <div class="wrapper-aboutAnimation-center">
-                <div class="info-text">
-                    <div>
-                        <p>
-                            <?php the_field('about_animation_text_info')?>
-                        </p>
-                        <strong> <?php the_field('about_animation_text_strong')?></strong>
-                    </div>
-                </div>
+
                 <div class="animation-center">
                     <strong> <?php the_field('about_animation_text_strong')?></strong>
 
@@ -20,6 +13,14 @@
                     echo wp_get_attachment_image( $imageCenter, $size, "", array( "class" => "img-fluid" ) );
                 }
             ?>
+                </div>
+                <div class="info-text">
+                    <div>
+                        <p>
+                            <?php the_field('about_animation_text_info')?>
+                        </p>
+                        <strong> <?php the_field('about_animation_text_strong')?></strong>
+                    </div>
                 </div>
             </div>
             <div class="wrapper-aboutAnimation-left">
