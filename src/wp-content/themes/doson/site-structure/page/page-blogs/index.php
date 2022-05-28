@@ -135,17 +135,18 @@
                             </div>
                         </div>
                     </div>
-                    <section id="section-news" class="section-news animation-wrapper">
-                        <?php
+                    <?php
                         $args = array(  
                             'post_status'    => 'publish',
-                            'showposts' => 2,
-                            // 'posts_per_page' => 2, 
+                            'paged' => 1,
+                            'posts_per_page' => 5, 
                             'orderby' => 'rand',
                             'post__not_in' =>$id_news_hot
                         );
                         $loop = new WP_Query( $args );
                         ?>
+                    <section id="section-news" class="section-news animation-wrapper"
+                        data-page="<?php echo $loop->max_num_pages;?>">
                         <?php $count= 0;?>
                         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
                         <?php $count++;?>
@@ -180,25 +181,22 @@
                                 </div>
                             </div>
                         </div>
-                        <?php endwhile; ?>
+                        <?php endwhile;  wp_reset_postdata(); ?>
                     </section>
                     <!-- End category 1 -->
                     <!-- Load more button -->
-                    <?php
-                         echo  $loop->max_num_pages;
-                        // don't display the button if there are not enough posts
-                        if (  $loop->max_num_pages > 1 ) :?>
+
                     <div class="wrapper-load-more">
                         <div id="load-more-news" class="btn btn-outline-red">
                             <div id="load-more" class="btn-click magnetic" data-strength="25" data-strength-text="15">
                                 <div class="btn-fill"></div>
                                 <span class="btn-text">
-                                    <span class="btn-text-inner change">Đọc thêm</span>
+                                    <span id="text-load-more" class="btn-text-inner change">Đọc thêm</span>
                                 </span>
                             </div>
                         </div>
                     </div>
-                    <?php endif; wp_reset_postdata(); ?>
+
                 </div>
                 <!-- Bar news -->
                 <div class="col-lg-4 col-md-12 col-12 position-relative">

@@ -20,6 +20,8 @@ $(document).ready(function () {
   serviceFlow();
   pageNews();
 
+  postDetail();
+
   // Slider
   //Header aminations
   // header();

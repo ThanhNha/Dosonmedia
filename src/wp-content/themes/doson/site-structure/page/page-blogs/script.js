@@ -1,8 +1,13 @@
 function pageNews() {
-  var offset = 2;
+  var offset = 1;
+  if (document.getElementById("section-news")) {
+    var maxpage = document.getElementById("section-news").dataset.page;
+  }
   // Declare project amount displayed
   $("#load-more").click(function (event) {
     var button = $(this);
+
+    var textchange = button.find("#text-load-more");
     event.preventDefault();
     $.ajax({
       // Ajax method
@@ -15,13 +20,16 @@ function pageNews() {
         offset: offset, // request product amount would like show for server
       },
       beforeSend: function () {
-        button.text("Loading...");
+        textchange.text("Loading...");
       },
       success: function (response) {
-        button.text("Đọc thêm").prev().before(response);
+        textchange.text("Đọc thêm").prev().before(response);
         $("#section-news").append(response);
         // console.log(response);
-        offset = offset + 2; // Increase project amount displayed
+        offset++; // Increase project amount displayed
+        if (maxpage <= offset) {
+          button.hide();
+        }
       },
       error: function (jqXHR, textStatus, errorThrown) {
         //Do something when error happens

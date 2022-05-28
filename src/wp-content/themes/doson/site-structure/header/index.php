@@ -26,10 +26,10 @@
                                         $menu_name = get_sub_field('menu_name');
                                         $menu_link = get_sub_field('menu_link');
                                 ?>
-                    <li class="nav-item magnetic <?php if(get_permalink()== $menu_link){echo 'active';} 
-                        if( have_rows('sub_menu' ,'option') ){echo 'dropdown';}
+                    <li class="nav-item <?php if(get_permalink()== $menu_link){echo 'active';} 
+                        if( have_rows('sub_menu' ,'option') ){echo ' dropdown';}else{echo ' magnetic';}
                     ?>">
-                        <a class="nav-link npm hover-menu <?php if( have_rows('sub_menu' ,'option') ){echo 'dropdown-toggle';} ?>" <?php if( have_rows('sub_menu' ,'option') ){echo ' dropdown-toggle" data-toggle="dropdown"
+                        <a class="nav-link hover-menu <?php if( have_rows('sub_menu' ,'option') ){echo 'dropdown-toggle';} ?>" <?php if( have_rows('sub_menu' ,'option') ){echo ' dropdown-toggle" data-toggle="dropdown"
                                         href="#" role="button" aria-haspopup="true" aria-expanded="true"';} ?>
                             href="<?php echo $menu_link;?>">
                             <?php echo $menu_name;?>

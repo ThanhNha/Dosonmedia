@@ -69,9 +69,7 @@
              </div>
              <div class="col-lg-5 col-md-6 col-12">
                  <h4 class="uppercase text-white font-semiboild">Đăng ký Email</h4>
-                 <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos dignissimos
-                     laborum nesciunt
-                     tempore quisquam sit, cumque vero a error quis?</p>
+                 <p class="text-white">Chúng tối sẽ liên hệ với bạn thông qua Email này.</p>
                  <div class="mt-4">
                      <div class="subscribe-form text-lg-right mt-5 mt-lg-0">
                          <!-- <form action="#" class="subscribe">

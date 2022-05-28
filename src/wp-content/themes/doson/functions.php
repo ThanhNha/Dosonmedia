@@ -33,12 +33,13 @@ add_action('wp_ajax_loadmore_update', 'get_update_loadmore');
 add_action('wp_ajax_nopriv_loadmore_update', 'get_update_loadmore');
 function get_update_loadmore()
 {
-    $offset = isset($_POST['offset']) ? (int)$_POST['offset'] : 0; // get a number of the article was display from the client send up
+    $offset = isset($_POST['offset']) ? (int)$_POST['offset'] : 1; // get a number of the article was display from the client send up
     
     $args = array(  
         'post_status'    => 'publish',
-        'orderby' => 'rand',
-        'offset' => $offset,
+        'orderby' => 'DESC',
+        'paged' => $offset,
+        'posts_per_page' => 4, 
     );
     $loop = new WP_Query( $args );
     ?>

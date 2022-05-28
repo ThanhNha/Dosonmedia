@@ -1,27 +1,29 @@
 function postDetail() {
-  $(".blog-wrapper-3").slick({
+  $(".wrapper-blogs-relate").slick({
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     infinite: true,
-    dots: true,
-    arrows: false,
+    dots: false,
+    arrows: true,
     autoplay: true,
     autoplaySpeed: 6000,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
+          arrows: false,
         },
       },
       {
         breakpoint: 900,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
+          arrows: false,
         },
       },
       {
@@ -29,6 +31,7 @@ function postDetail() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
         },
       },
       {
@@ -36,6 +39,9 @@ function postDetail() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "40px",
+          arrows: false,
         },
       },
     ],
