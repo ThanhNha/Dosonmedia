@@ -246,7 +246,11 @@
 
 //  Back To Top
 //
-
+.backtop.show {
+  opacity: 1;
+  pointer-events: all;
+  transform: scale(1);
+}
 .backtop {
   position: fixed;
   background: $color-red-500;
@@ -260,7 +264,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: scale(0);
   opacity: 0;
+  pointer-events: none;
+  @include transition;
+
   border-radius: 50px;
   @include desktop {
     bottom: 50px;
