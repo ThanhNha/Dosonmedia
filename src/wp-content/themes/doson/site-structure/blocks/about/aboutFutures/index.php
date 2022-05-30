@@ -1,5 +1,5 @@
 <section id="section-futures" class="section-futures">
-    <div class="img-animation rotating animation__image">
+    <div class="img-animation animation__image">
         <?php 
       $image = get_field('about_futures_rotating');
       $size = 'large'; 

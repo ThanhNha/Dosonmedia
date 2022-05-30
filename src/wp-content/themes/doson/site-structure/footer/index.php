@@ -1,12 +1,18 @@
  <!-- footer Start -->
- <footer id="footer" class="footer">
-     <?php 
+ <?php 
  $phone = get_field('phone', 'option');
  $location = get_field('location', 'option');
  $email_footer = get_field('email', 'option');
  $link_map = get_field('link_map', 'option');
-
+global $post;
+$post_slug = $post->post_name;
  ?>
+ <footer id="footer" class="footer" style="
+ <?php if($post_slug == 'about'){echo 'background: #fed8a8';}
+ if($post_slug == 'service'){echo 'background: #f6f7f8';}
+ 
+ ?>">
+
      <div class="bg-img">
          <?php
                     $image = get_field('background_footer', 'option');

@@ -1,6 +1,15 @@
 <main id="page-news">
 
     <section id="section-banner-news" class="section-banner-news">
+        <div class="banner-img-mobile">
+            <?php 
+           $image_banner_mb = get_field('page_news_image_animation_mobile');
+           $size = 'large';
+           if($image_banner_mb){
+            echo wp_get_attachment_image( $image_banner_mb, $size, "", array( "class" => "img-banner" ) );
+           }
+           ?>
+        </div>
         <div class="banner-img">
             <?php 
            $image_banner = get_field('page_news_image_animation');

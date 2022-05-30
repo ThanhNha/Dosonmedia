@@ -33,7 +33,6 @@
                                         href="#" role="button" aria-haspopup="true" aria-expanded="true"';} ?>
                             href="<?php echo $menu_link;?>">
                             <?php echo $menu_name;?>
-                            <?php if( have_rows('sub_menu' ,'option') ){echo '<i class="icofont-thin-down"></i>';} ?>
                         </a>
                         <?php if( have_rows('sub_menu' ,'option') ): ?>
                         <ul class="dropdown-menu" aria-labelledby="dropdown05">
