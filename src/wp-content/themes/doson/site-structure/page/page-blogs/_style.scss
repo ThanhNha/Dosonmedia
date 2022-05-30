@@ -69,6 +69,17 @@
     @include desktop {
       padding-top: 50px;
     }
+    .section-title {
+      .divider {
+        width: 80px;
+        @include tablet {
+          width: 100px;
+        }
+      }
+      span {
+        margin-left: 20px;
+      }
+    }
     .wrapper-card-news {
       height: 100%;
       display: flex;

@@ -44,7 +44,7 @@ main {
   .section-title {
     display: flex;
     span {
-      margin-left: 20px;
+      margin-left: 0px;
       display: inline-block;
       color: $white;
       padding: 10px 15px;
@@ -53,6 +53,7 @@ main {
 
       @include tablet {
         margin-top: 0;
+        margin-left: 20px;
       }
     }
     .title {
@@ -100,6 +101,7 @@ main {
   .section-title {
     display: flex;
     span {
+      margin-left: 10px;
       display: inline-block;
       color: $white;
       padding: 10px 15px;

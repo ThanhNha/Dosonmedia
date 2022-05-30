@@ -1,5 +1,4 @@
 <main id="page-news">
-
     <section id="section-banner-news" class="section-banner-news">
         <div class="banner-img-mobile">
             <?php 
