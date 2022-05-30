@@ -25,4 +25,5 @@ $(document).ready(function () {
   // Slider
   //Header aminations
   // header();
+  footer();
 });

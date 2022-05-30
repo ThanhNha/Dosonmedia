@@ -53,7 +53,7 @@ $post_slug = $post->post_name;
                      <div class="divider mx-md-auto mb-4"></div>
                      <ul class="list-unstyled footer-menu">
                          <li>
-                             <a href="#">
+                             <a href="<?php echo $link_map;?>">
                                  <i class="icofont-location-pin"></i>
                                  <span> <?php echo $location;?></span>
                              </a>
@@ -78,10 +78,6 @@ $post_slug = $post->post_name;
                  <p class="text-white">Chúng tối sẽ liên hệ với bạn thông qua Email này.</p>
                  <div class="mt-4">
                      <div class="subscribe-form text-lg-right mt-5 mt-lg-0">
-                         <!-- <form action="#" class="subscribe">
-                             <input type="text" class="form-control" placeholder="Your Email address">
-                             <a href="#" class="btn magnetic main-btn btn-round-full">Subscribe</a>
-                         </form> -->
                          <?php 
                             echo do_shortcode('[formidable id=2 title=false description=false]');
                          ?>
@@ -116,7 +112,7 @@ $post_slug = $post->post_name;
 
          <div class="row">
              <div class="col-lg-4">
-                 <a class="backtop js-scroll-trigger" href="#top">
+                 <a id="backtop" class="backtop js-scroll-trigger" href="#top">
                      <i class="icofont-scroll-long-up"></i>
                  </a>
              </div>
