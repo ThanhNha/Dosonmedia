@@ -1,16 +1,14 @@
 #single-post {
   .single-img {
-    height: auto;
-    @include tablet {
-      height: auto;
-    }
-    @include desktop {
-      height: 70vh;
-      max-height: 550px;
-    }
     img {
-      width: 100%;
       height: 100%;
+      @include tablet {
+        max-height: 500px;
+      }
+      @include desktop {
+        max-height: 600px;
+      }
+      width: 100%;
       object-fit: cover;
     }
   }

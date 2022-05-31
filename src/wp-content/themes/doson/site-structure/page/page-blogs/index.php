@@ -108,7 +108,7 @@
                                         <a href="<?php echo $result_link?>">
                                             <?php 
                                                 $image_2 = get_post_thumbnail_id($result->ID);
-                                                $size = 'large';
+                                                $size = 'medium';
                                                 if( $image_2 ) {
                                                     echo wp_get_attachment_image( $image_2, $size, "", array( "class" => "img-fluid" ) );
                                                 }
@@ -129,7 +129,6 @@
             </div>
         </div>
     </section>
-
     <section class="wrapper-news-info">
         <div class="container">
             <div class="row">
@@ -168,7 +167,7 @@
                                             <a href="<?php the_permalink();?>">
                                                 <?php 
                                                 $image = get_post_thumbnail_id();
-                                                $size = 'large';
+                                                $size = 'medium';
                                                 if( $image ) {
                                                     echo wp_get_attachment_image( $image, $size, "", array( "class" => "img-fluid" ) );
                                                 }
@@ -233,7 +232,7 @@
                                     <a href="<?php echo get_the_permalink($results_read[0]->ID);?>">
                                         <?php 
                                                 $image_read = get_post_thumbnail_id($results_read[0]->ID);
-                                                $size = 'large';
+                                                $size = 'small';
                                                 if( $image_read ) {
                                                     echo wp_get_attachment_image( $image_read, $size, "", array( "class" => "img-fluid" ) );
                                                 }

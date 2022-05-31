@@ -353,7 +353,7 @@ main {
     }
   }
   .news-image {
-    @include desktop {
+    @include tablet {
       border-radius: 15px;
     }
     @include desktop {
@@ -367,6 +367,7 @@ main {
       @include transition;
       width: 100%;
       height: 100%;
+      min-height: 90px;
       object-fit: cover;
     }
   }
