@@ -279,7 +279,7 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
+            "return_format": "url"
         },
         {
             "key": "field_628b43eaa9477",
@@ -294,7 +294,7 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
+            "return_format": "url"
         },
         {
             "key": "field_628b43eaa9478",
@@ -309,12 +309,12 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
+            "return_format": "url"
         },
         {
             "key": "field_628b43e9a9476",
-            "label": "Tiktoc",
-            "name": "tiktoc",
+            "label": "Tiktok",
+            "name": "tiktok",
             "type": "link",
             "instructions": "",
             "required": 0,
@@ -324,7 +324,7 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
+            "return_format": "url"
         },
         {
             "key": "field_62675d4c84977",
@@ -471,5 +471,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1653294113
+    "modified": 1653900701
 }
